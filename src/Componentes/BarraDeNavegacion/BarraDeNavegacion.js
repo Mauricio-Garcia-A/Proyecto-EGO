@@ -1,5 +1,6 @@
 import React from 'react'
 import './BarraDeNavegacion.css'
+import { Link } from "react-router-dom"
 
 export default function BarraDeNavegacion() {
     return (
@@ -8,9 +9,11 @@ export default function BarraDeNavegacion() {
                 MM
             </div>
             <div className='contenedor-botones-BarraDeNavegacion'>
-                <button>Home</button>
-                <button>Modelos</button>
-                <button>Ficha Tecnica</button>
+            <nav>
+                <Link to="/">HOME</Link>
+                <Link to="/modelos">MODELOS</Link>
+                <Link to="/fichatecnica">FICHA TECNICA</Link>
+            </nav>
             </div>
         </div>
     )
