@@ -1,0 +1,18 @@
+.contenedor-BarraDeNavegacion{
+    background: red;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.contenedor-botones-BarraDeNavegacion {
+
+}
+.icono-BarraDeNavegacion {
+    background: black;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    
+}

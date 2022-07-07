@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import BarraDeNavegacion from './Componentes/BarraDeNavegacion/BarraDeNavegacion'
+import PieDePagina from './Componentes/PieDePagina/PieDePagina'
+import Home from './Paginas/Home/Home'
+import Modelos from './Paginas/Modelos/Modelos'
+import FichaTecnica from './Paginas/FichaTecnica/FichaTecnica'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="contenedor-App">
+      <header>
+        <BarraDeNavegacion />
       </header>
+      <section>
+        <Home />
+        <Modelos />
+        <FichaTecnica />
+      </section>
+      <footer className='pie-de-pagina-App '>
+        <PieDePagina />
+      </footer>
     </div>
   );
 }
