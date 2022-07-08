@@ -4,7 +4,7 @@ export default function LogoEGO({width='40px', height='40px'}) {
     return (
         <div >
             <svg version="1.0" 
-            width={width} height={width} viewBox="0 0 105.000000 104.000000"
+            width={width} height={height} viewBox="0 0 105.000000 104.000000"
             preserveAspectRatio="xMidYMid meet">
 
             <g transform="translate(0.000000,104.000000) scale(0.100000,-0.100000)"
