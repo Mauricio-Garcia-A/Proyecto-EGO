@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Proyecto-EGO/static/css/main.71ecfc17.css",
-    "main.js": "/Proyecto-EGO/static/js/main.077a129e.js",
+    "main.css": "/Proyecto-EGO/static/css/main.f70d37d8.css",
+    "main.js": "/Proyecto-EGO/static/js/main.b652db9e.js",
     "static/js/787.2f346c0f.chunk.js": "/Proyecto-EGO/static/js/787.2f346c0f.chunk.js",
+    "static/media/imagen-ubicacion.png": "/Proyecto-EGO/static/media/imagen-ubicacion.3060e18d2531fc3af583.png",
     "index.html": "/Proyecto-EGO/index.html",
-    "main.71ecfc17.css.map": "/Proyecto-EGO/static/css/main.71ecfc17.css.map",
-    "main.077a129e.js.map": "/Proyecto-EGO/static/js/main.077a129e.js.map",
+    "main.f70d37d8.css.map": "/Proyecto-EGO/static/css/main.f70d37d8.css.map",
+    "main.b652db9e.js.map": "/Proyecto-EGO/static/js/main.b652db9e.js.map",
     "787.2f346c0f.chunk.js.map": "/Proyecto-EGO/static/js/787.2f346c0f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71ecfc17.css",
-    "static/js/main.077a129e.js"
+    "static/css/main.f70d37d8.css",
+    "static/js/main.b652db9e.js"
   ]
 }
