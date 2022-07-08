@@ -1,0 +1,40 @@
+.contenedor-ItemVehiculo{
+    margin: 10px;
+    border-radius: 5px;
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.contenedor-ItemVehiculo:hover {
+    background: rgb(248, 248, 248);
+    border: 1px solid rgb(229, 229, 229);
+    box-shadow: 2px 4px 4px 1px rgba(143, 143, 143, 0.153);
+}
+
+.texto-titulo-ItemVehiculo {
+    text-align: center;
+    font-size: 25px;
+    padding:0;
+    padding-top: 20px;
+    margin: 0;
+}
+.texto-informacion-ItemVehiculo {
+    text-align: center;
+    color: rgb(73, 73, 73);
+    padding:0;
+    margin: 0;
+}
+
+.contenedor-imagen-ItemVehiculo {
+    margin:5px;
+    width: 290px;
+    height: 220px;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+}
+.imagen-ItemVehiculo {
+    margin: auto;
+    width: 290px;
+    height: auto;
+    border-radius: 5px;
+}
