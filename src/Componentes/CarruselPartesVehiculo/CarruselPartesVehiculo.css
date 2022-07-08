@@ -1,0 +1,85 @@
+/* Estilos del Componente ItemParteVehiculo */
+.contenedor-ItemParteVehiculo {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: left;
+}
+.contenedor-imagen-ItemParteVehiculo{
+    width: 200px;
+    height: 100px;
+    background: black;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+}
+.imagen-ItemParteVehiculo{
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.titulo-ItemParteVehiculo {
+    font-size: 15px;
+    padding:0;
+    margin: 10px;
+    color: rgb(22, 22, 22);
+}
+.descripcion-ItemParteVehiculo {
+    font-size: 14px;
+    padding:0;
+    margin: 10px;
+    color: rgb(80, 80, 80); 
+}
+
+/* Estilos del Componente Vehiculos */
+.contenedor-CarruselPartesVehiculo {
+    position: relative;
+    padding-bottom: 15px;
+}
+.gradienteIzquerdo-CarruselPartesVehiculo {
+    position: absolute;
+    left: 0;
+    background: rgb(247,247,247);
+    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 30%, rgba(255, 255, 255, 0) 100%);
+    width: 90px;
+    height: 220px;
+}
+.gradienteDerecho-CarruselPartesVehiculo {
+
+    position: absolute;
+    right: 0;
+    background: rgb(247,247,247);
+    background: linear-gradient(90deg, rgba(255, 255, 255,0) 0%, rgba(247,247,247,1) 60%, rgba(247,247,247, 1) 100%);
+    width: 90px;
+    height: 220px;
+}
+
+.contenedor-items-CarruselPartesVehiculo {
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left:60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.contenedor-items-CarruselPartesVehiculo::-webkit-scrollbar{
+    border-radius: 6px;
+    height: 12px;
+    background: rgba(194, 194, 194, 0.226);
+    
+}
+.contenedor-items-CarruselPartesVehiculo::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: rgb(128, 127, 127);
+    
+}
+.contenedor-items-CarruselPartesVehiculo::-webkit-scrollbar-thumb:hover{
+    background: rgb(109, 109, 109);
+    
+}

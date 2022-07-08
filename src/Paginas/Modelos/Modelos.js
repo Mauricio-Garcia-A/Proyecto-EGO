@@ -37,7 +37,7 @@ export default function Modelos() {
                 {MODELOS.map((vehiculo)=>{
                    return (
                         <ItemVehiculo 
-
+                            key={'itemVehiculo'+vehiculo.id}
                             id={vehiculo.id}
                             name={vehiculo.name } 
                             year={vehiculo.year} 
