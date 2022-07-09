@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Proyecto-EGO/static/css/main.f54fe012.css",
-    "main.js": "/Proyecto-EGO/static/js/main.10166e2e.js",
+    "main.css": "/Proyecto-EGO/static/css/main.8f71e992.css",
+    "main.js": "/Proyecto-EGO/static/js/main.94ff5725.js",
     "static/js/787.2f346c0f.chunk.js": "/Proyecto-EGO/static/js/787.2f346c0f.chunk.js",
     "static/media/Imagen3.png": "/Proyecto-EGO/static/media/Imagen3.a70abf65723ed8627dcd.png",
     "static/media/Parte3.jpg": "/Proyecto-EGO/static/media/Parte3.52865ed097d935dfd7c6.jpg",
@@ -13,18 +13,23 @@
     "static/media/Parte4.jpg": "/Proyecto-EGO/static/media/Parte4.8b396336cb127d86ab26.jpg",
     "static/media/Imagen1.png": "/Proyecto-EGO/static/media/Imagen1.7dc90a37e9c03d60de7b.png",
     "static/media/Parte6.jpg": "/Proyecto-EGO/static/media/Parte6.c9c2b6d68e2abff93323.jpg",
+    "static/media/Imagen1-HOME.webp": "/Proyecto-EGO/static/media/Imagen1-HOME.aaf3d80bddb51c1698a9.webp",
     "static/media/Parte8.jpg": "/Proyecto-EGO/static/media/Parte8.5e185645c8282cf62ad3.jpg",
     "static/media/Parte7.jpg": "/Proyecto-EGO/static/media/Parte7.c29bdcd1e4bd7c24220b.jpg",
+    "static/media/Imagen3-HOME.webp": "/Proyecto-EGO/static/media/Imagen3-HOME.a18ea4c0027d9673a131.webp",
+    "static/media/Imagen5-HOME.webp": "/Proyecto-EGO/static/media/Imagen5-HOME.a421f6ce631bc4827128.webp",
+    "static/media/Imagen2-HOME.webp": "/Proyecto-EGO/static/media/Imagen2-HOME.da2c19c68f2dcb182a9e.webp",
     "static/media/Parte2.jpg": "/Proyecto-EGO/static/media/Parte2.dd5fa34214c993dddf2a.jpg",
+    "static/media/Imagen4-HOME.webp": "/Proyecto-EGO/static/media/Imagen4-HOME.ed0d8537c71203931e7c.webp",
     "static/media/VehiculoDefault.png": "/Proyecto-EGO/static/media/VehiculoDefault.d84d3b25e1a14a6e4a4d.png",
     "static/media/Parte1.jpg": "/Proyecto-EGO/static/media/Parte1.4a231f0738a12864ba1b.jpg",
     "index.html": "/Proyecto-EGO/index.html",
-    "main.f54fe012.css.map": "/Proyecto-EGO/static/css/main.f54fe012.css.map",
-    "main.10166e2e.js.map": "/Proyecto-EGO/static/js/main.10166e2e.js.map",
+    "main.8f71e992.css.map": "/Proyecto-EGO/static/css/main.8f71e992.css.map",
+    "main.94ff5725.js.map": "/Proyecto-EGO/static/js/main.94ff5725.js.map",
     "787.2f346c0f.chunk.js.map": "/Proyecto-EGO/static/js/787.2f346c0f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f54fe012.css",
-    "static/js/main.10166e2e.js"
+    "static/css/main.8f71e992.css",
+    "static/js/main.94ff5725.js"
   ]
 }
