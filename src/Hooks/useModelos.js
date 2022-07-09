@@ -12,8 +12,16 @@ import Imagen3 from '../Imagenes/Imagen3.png'
 import Imagen4 from '../Imagenes/Imagen4.jpg'
 import Imagen5 from '../Imagenes/Imagen5.png'
 
+import ImagenHome1 from '../Imagenes/Imagen1-HOME.webp'
+import ImagenHome2 from '../Imagenes/Imagen2-HOME.webp'
+import ImagenHome3 from '../Imagenes/Imagen3-HOME.webp'
+import ImagenHome4 from '../Imagenes/Imagen4-HOME.webp'
+import ImagenHome5 from '../Imagenes/Imagen5-HOME.webp'
+
 
 export function useModelos() {
+    const IMAGENES_CARRUSEL = [ImagenHome1,ImagenHome2,ImagenHome3,ImagenHome4,ImagenHome5]
+
     const MODELOS = [
         {
             id: 1,
@@ -159,5 +167,5 @@ export function useModelos() {
         },
     ]
 
-    return { MODELOS, ITEM_PARTES, SECCIONES } 
+    return { MODELOS, ITEM_PARTES, SECCIONES, IMAGENES_CARRUSEL} 
 }
