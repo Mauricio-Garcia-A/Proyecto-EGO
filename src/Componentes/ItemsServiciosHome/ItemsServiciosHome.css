@@ -1,0 +1,28 @@
+.contenedor-ItemsServiciosHome {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.contenedor-item-ItemsServiciosHome {
+    width: 333px;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(241, 241, 241);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(121, 121, 121, 0.433);
+    box-shadow: 2px 4px 4px 1px rgba(143, 143, 143, 0.345);
+    overflow: hidden;
+}
+.contenedor-item-ItemsServiciosHome:hover {
+    background: rgb(218, 218, 218);
+}
+.contenedor-texto-ItemsServiciosHome {
+    padding-left: 15px;
+}
+.contenedor-texto-ItemsServiciosHome p {
+    color:rgb(75, 75, 75);
+    font-size: 11pt;
+}
