@@ -10,13 +10,14 @@ export default function Home(){
     return (
         <>
             <CarruselHome imagenes={IMAGENES_CARRUSEL} autoPlay="true" />
-            <ItemsServiciosHome />
-            <br/>
-            <ComparacionVehiculo />
-            <img class="scale-with-grid" src="/wp-content/uploads/2021/09/Frame-851.svg" alt="Home" title=""></img>
-
+            <h1 className='titulo-Home'>¡Bienvenido a Agencia EGO!</h1>
+            <section className='seccion-Home'>
+                <ItemsServiciosHome />
+            </section>
+            <section className='seccion-Home'>
+                <ComparacionVehiculo />
+            </section>
         </>
-        
     )
 }
 
