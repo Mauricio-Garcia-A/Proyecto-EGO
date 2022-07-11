@@ -1,11 +1,11 @@
 import React from 'react';
-import { useModelos } from '../../Hooks/useModelos';
+import { useSimuladorAPI } from '../../Hooks/useSimuladorAPI';
 import './FichaTecnica.css'
 import Imagen1 from '../../Imagenes/Imagen1.png'
 import CarruselPartesVehiculo from '../../Componentes/CarruselPartesVehiculo/CarruselPartesVehiculo';
 
 export default function FichaTecnica(){
-    const {SECCIONES,ITEM_PARTES}=useModelos()
+    const {SECCIONES,ITEM_PARTES}=useSimuladorAPI()
 
     const ItemDescripcion = ({Titulo, Descripcion, Imagen, Par})=>{
         return(

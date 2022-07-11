@@ -2,11 +2,12 @@ import React from 'react'
 import CarruselHome from '../../Componentes/CarruselHome/CarruselHome'
 import ComparacionVehiculo from '../../Componentes/ComparacionVehiculo/ComparacionVehiculo'
 import ItemsServiciosHome from '../../Componentes/ItemsServiciosHome/ItemsServiciosHome'
-import { useModelos } from '../../Hooks/useModelos'
+import { useSimuladorAPI } from '../../Hooks/useSimuladorAPI'
 import './Home.css'
 
 export default function Home(){
-    const {IMAGENES_CARRUSEL} = useModelos()
+
+    const {IMAGENES_CARRUSEL} = useSimuladorAPI()
     return (
         <>
             <CarruselHome imagenes={IMAGENES_CARRUSEL} autoPlay="true" />
