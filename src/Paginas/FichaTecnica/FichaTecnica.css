@@ -2,18 +2,17 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
 }
 .contenedor-imagen-encabezado-FichaTecnica {
-    max-width: 550px;
-    max-height: 300px;
+    max-width: 600px;
+    max-height: 350px;
     width: 80%;
     height: auto;
     border-radius: 5px;
 }
 .contenedor-texto-encabezado-FichaTecnica{
-    width: 40%;
-    padding-top: 3%;
-    
+    width: 40%;    
 }
 .imagen-vehiculo-FichaTecnica {
     width: 100%;

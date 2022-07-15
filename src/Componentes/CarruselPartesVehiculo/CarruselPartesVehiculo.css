@@ -4,11 +4,13 @@
     width: 200px;
     height: 200px;
     text-align: left;
+
+    scroll-snap-align: center;
 }
 .contenedor-imagen-ItemParteVehiculo{
     width: 200px;
-    height: 100px;
-    background: black;
+    height: 111px;  
+    background: rgb(0, 0, 0);
     border-radius: 5px;
     overflow: hidden;
     display: flex;
@@ -35,23 +37,28 @@
 .contenedor-CarruselPartesVehiculo {
     position: relative;
     padding-bottom: 15px;
+    background: rgb(234, 240, 249);
 }
 .gradienteIzquerdo-CarruselPartesVehiculo {
     position: absolute;
     left: 0;
-    background: rgb(247,247,247);
-    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 30%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, rgb(231, 238, 249) 0%, rgb(231, 238, 249) 30%, rgba(255, 255, 255, 0) 100%);
     width: 90px;
     height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .gradienteDerecho-CarruselPartesVehiculo {
-
     position: absolute;
     right: 0;
     background: rgb(247,247,247);
-    background: linear-gradient(90deg, rgba(255, 255, 255,0) 0%, rgba(247,247,247,1) 60%, rgba(247,247,247, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255,0) 0%, rgba(231, 238, 249) 60%, rgba(231, 238, 249) 100%);
     width: 90px;
     height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-items-CarruselPartesVehiculo {
@@ -64,8 +71,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow-y: hidden;
-    overflow-x: scroll;
+
+    overflow: hidden;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .contenedor-items-CarruselPartesVehiculo::-webkit-scrollbar{
@@ -82,4 +92,64 @@
 .contenedor-items-CarruselPartesVehiculo::-webkit-scrollbar-thumb:hover{
     background: rgb(109, 109, 109);
     
+}
+
+.contenedor-selectores-CarruselPartesVehiculo {
+    width: 100%;
+    bottom: 17px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+.contenedor-selectores-CarruselPartesVehiculo.selector-control-no-visible {
+    visibility: hidden;
+}
+
+
+.selector-CarruselPartesVehiculo {
+    margin: 0px 10px;
+    background: rgba(63, 63, 63, 0.256);
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    transition: 1s ease all ;
+
+}
+.selector-CarruselPartesVehiculo.active-select-CarruselPartesVehiculo {
+    background: rgba(63, 63, 63, 0.555);
+    width: 50px;
+}
+
+.boton-control-CarruselPartesVehiculo {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(4, 4, 4, 0.185);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    opacity: 0.3;
+    transition: 1s ease all ;
+}
+.boton-control-CarruselPartesVehiculo:hover {
+    opacity: 1;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.29);
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(1.1);
+
+}
+.boton-control-CarruselPartesVehiculo:active {
+   background: rgb(238, 238, 238);
+   border: 1px solid rgb(237, 237, 237);
+   transition: 0s ease all ;
+}
+
+.boton-control-CarruselPartesVehiculo.boton-control-no-visible {
+    visibility: hidden;
+    transition: 1s ease all ;
 }

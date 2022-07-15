@@ -1,12 +1,18 @@
-import React from 'react';
-import { useSimuladorAPI } from '../../Hooks/useSimuladorAPI';
+import React, { useEffect } from 'react';
+import {useParams} from 'react-router-dom';
 import './FichaTecnica.css'
-import Imagen1 from '../../Imagenes/Imagen1.png'
 import CarruselPartesVehiculo from '../../Componentes/CarruselPartesVehiculo/CarruselPartesVehiculo';
+import { useDetallesDelModelo } from '../../Hooks/useDetallesDelModelo';
+import PlaceholderFichaTecnica from '../../Componentes/ItemsLoading/PlaceholderFichaTecnica/PlaceholderFichaTecnica';
 
 export default function FichaTecnica(){
-    const {SECCIONES,ITEM_PARTES}=useSimuladorAPI()
+    useEffect(() => {
+        window.scrollTo(0, 0)                                                                                           // Scrollea al arriba de todo, al iniciar la pagina
+    }, [])
 
+    const {id} = useParams();                                                                                           // Extraigo ID de la URL
+    const {modelo,  model_features, model_highlights, loading} = useDetallesDelModelo({id})
+    
     const ItemDescripcion = ({Titulo, Descripcion, Imagen, Par})=>{
         return(
                 <section className={Par ? 'seccion-decripcion-vehiculo-FichaTecnica seccion-par-FichaTecnica': 'seccion-decripcion-vehiculo-FichaTecnica seccion-impar-FichaTecnica'} > 
@@ -22,32 +28,36 @@ export default function FichaTecnica(){
     }
 
     return (
-        <div>
-            <section className='encabezado-FichaTecnica' > 
-                <div className='contenedor-imagen-encabezado-FichaTecnica'>
-                    <img src={Imagen1} alt="img"  className='imagen-vehiculo-FichaTecnica'/>
-                </div>
-                <div className='contenedor-texto-encabezado-FichaTecnica'> 
-                    <p  className='subtitulo-FichaTecnica'> <b>Hilux DX/SR</b></p>
-                    <h1 className='titulo-FichaTecnica'>Preparada para cualquier desafío </h1>
-                    <p className='descripcion-FichaTecnica'> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500 </p>
-                 </div>  
-            </section>
-                <CarruselPartesVehiculo ItemsPartes={ITEM_PARTES}/>
-            <section > 
-                
-            </section>
-
-            {SECCIONES.map((itemSeccion, i)=>{
-                let seccionPar=false
-                if ((i%2)===0) {
-                    seccionPar=true
-                }
-                return(
-                       <ItemDescripcion key={'itemDescropcion'+i} Titulo={itemSeccion.titulo} Descripcion={itemSeccion.descripcion} Imagen={itemSeccion.imagen} Par={seccionPar} /> 
-                )
-            })}
-        </div>
+        <>
+        {loading ? <PlaceholderFichaTecnica />
+                 :  <div>
+                        <section className='encabezado-FichaTecnica' > 
+                            <div className='contenedor-imagen-encabezado-FichaTecnica'>
+                                <img src={modelo.photo} alt="img"  className='imagen-vehiculo-FichaTecnica'/>
+                            </div>
+                            <div className='contenedor-texto-encabezado-FichaTecnica'> 
+                                <p  className='subtitulo-FichaTecnica'> <b>{modelo.name}</b></p>
+                                <h1 className='titulo-FichaTecnica'>{modelo.title} </h1>
+                                <p className='descripcion-FichaTecnica'>{modelo.description} </p>
+                            </div>  
+                        </section>
+                        <CarruselPartesVehiculo ItemsPartes={model_features}/>    
+                        <section > 
+                            {model_highlights.map((itemSeccion, i)=>{
+                                let seccionPar=false
+                                if ((i%2)===0) {
+                                    seccionPar=true
+                                }
+                                return(
+                                    <ItemDescripcion key={'itemDescropcion'+i} Titulo={itemSeccion.title} Descripcion={itemSeccion.content} Imagen={itemSeccion.image} Par={seccionPar} /> 
+                                )
+                            })}    
+                        </section>
+                    </div>
+        }
+        </>
+        
+        
     )
 };
 

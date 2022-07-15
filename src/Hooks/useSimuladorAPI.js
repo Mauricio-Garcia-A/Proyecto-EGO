@@ -7,6 +7,8 @@ import Parte6 from '../Imagenes/Parte6.jpg'
 import Parte7 from '../Imagenes/Parte7.jpg'
 import Parte8 from '../Imagenes/Parte8.jpg'
 
+import Imagen1 from '../Imagenes/Imagen1.png'
+
 import Imagen2 from '../Imagenes/Imagen2.jpg'
 import Imagen3 from '../Imagenes/Imagen3.png'
 import Imagen4 from '../Imagenes/Imagen4.jpg'
@@ -99,52 +101,14 @@ export function useSimuladorAPI() {
     
       const ITEM_PARTES = [
         {
-            id: 1,
-            titulo: "Motores",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte1,
+            name: "Motores",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            image: Parte1,
         },
         {
-            id: 2,
-            titulo: "Suspencion Mejorada",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte2,
-        },
-        {
-            id: 3,
-            titulo: "Transmisíon automática",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte3,
-        },
-        {
-            id: 4,
-            titulo: "Transmisíon manual",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte4, 
-        },
-        {
-            id: 5,
-            titulo: "Transmisíon asistida",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte5,
-        },
-        {
-            id: 6,
-            titulo: "Traccion tracera",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte6, 
-        },
-        {
-            id: 7,
-            titulo: "Traccion delantera",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte7,
-        },
-        {
-            id: 8,
-            titulo: "Sistema de frenos",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte8,
+            name: "Suspencion Mejorada",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            image: Parte2,
         }
       ]
     
@@ -167,5 +131,11 @@ export function useSimuladorAPI() {
         },
     ]
 
-    return { MODELOS, ITEM_PARTES, SECCIONES, IMAGENES_CARRUSEL} 
+    const MODELO_SELECCIONADO={ name:'Hilux DX/SR', 
+                                title:'Preparada para cualquier desafío' , 
+                                description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500', 
+                                photo:Imagen1 
+                            }
+
+    return { MODELOS, ITEM_PARTES, SECCIONES, IMAGENES_CARRUSEL, MODELO_SELECCIONADO} 
 }

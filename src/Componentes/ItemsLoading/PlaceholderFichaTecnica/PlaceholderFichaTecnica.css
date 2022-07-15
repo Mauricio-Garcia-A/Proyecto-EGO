@@ -1,0 +1,171 @@
+.encabezado-PlaceholderFichaTecnica{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    animation-name: opacidad;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes opacidad {
+    from {opacity: 1;}
+    to {opacity: 0.3;}
+}
+.contenedor-imagen-encabezado-PlaceholderFichaTecnica {
+    max-width: 600px;
+    
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.imagen-vehiculo-PlaceholderFichaTecnica {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+.contenedor-texto-encabezado-PlaceholderFichaTecnica{
+    width: 40%;  
+    margin-bottom: 10px;
+}
+
+
+
+.texto-titulo-PlaceholderFichaTecnica {
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    height: 25px;
+    border-radius: 10px;
+    background: rgb(188, 188, 188);
+}
+.texto-subtitulo-modelo-PlaceholderFichaTecnica {
+    width: 80px;
+    height: 15px;
+    border-radius: 6px;
+    background: rgb(188, 188, 188);
+    margin-bottom: 10px;
+}
+
+.texto-descripcion-PlaceholderFichaTecnica {
+    margin-bottom: 3px;
+    width: 80%;
+    height: 10px;
+    border-radius: 6px;
+    background: rgb(188, 188, 188);
+}
+
+/* Carrusel */
+.contenedor-carrusel-PlaceholderFichaTecnica {
+    background: rgb(237, 237, 237);
+    height: 250px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    padding-left: 40px;
+
+    overflow: hidden;
+}
+.contenedor-item-PlaceholderFichaTecnica{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: left;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+
+    animation-name: opacidad;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.contenedor-imagen-item-carrusel-PlaceholderFichaTecnica{
+    width: 200px;
+    height: 111px;  
+    background: rgb(186, 186, 186);
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 10px;
+}
+.contenedor-texto-item-carrusel-PlaceholderFichaTecnica {
+    padding-left: 15px;
+}
+
+.imagen-PlaceholderFichaTecnica{
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+}
+.gradienteDerecho-PlaceholderFichaTecnica {
+    position: absolute;
+    right: 0;
+    background: rgb(247,247,247);
+    background: linear-gradient(90deg, rgba(255, 255, 255,0) 0%, rgba(237, 237, 237) 60%, rgba(237, 237, 237) 100%);
+    width: 90px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* secciones */
+.seccion-decripcion-vehiculo-PlaceholderFichaTecnica {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+
+    animation-name: opacidad;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.seccion-impar-PlaceholderFichaTecnica{
+    flex-direction:row-reverse;
+}
+.seccion-par-PlaceholderFichaTecnica{
+    flex-direction:row;
+}
+
+.contenedor-textos-seccion-PlaceholderFichaTecnica {
+    width: 40%;    
+    padding-top: 3%;
+} 
+
+.contenedor-imagen-seccion-PlaceholderFichaTecnica {
+    display: flex;
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.imagen-seccion-PlaceholderFichaTecnica {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1050px) {
+    .contenedor-texto-encabezado-PlaceholderFichaTecnica{
+        width: 80%;
+    }
+
+}
+@media only screen and (max-width: 940px) {
+    .contenedor-textos-seccion-PlaceholderFichaTecnica {
+        width: 95%;
+    } 
+    .contenedor-imagen-seccion-PlaceholderFichaTecnica {
+        width: 95%;
+    }
+}

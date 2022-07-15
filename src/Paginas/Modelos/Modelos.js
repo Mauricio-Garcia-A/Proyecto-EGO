@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import PlaceholderModelos from '../../Componentes/ItemsLoading/PlaceholderModelos/PlaceholderModelos';
 import ItemVehiculo from '../../Componentes/ItemVehiculo/ItemVehiculo';
 import SelectorModelos from '../../Componentes/SelectorModelos/SelectorModelos';
@@ -53,14 +54,15 @@ export default function Modelos() {
                      :  <section className='contenedor-items-vehiculos-Modelos'>
                             {modelos.map((vehiculo)=>{
                             return (
+                                <Link key={'itemVehiculo'+vehiculo.id}  to={`/modelo/${vehiculo.id}/${vehiculo.name}`} className='estilos-link-Modelos'>
                                     <ItemVehiculo 
-                                        key={'itemVehiculo'+vehiculo.id}
                                         id={vehiculo.id}
                                         name={vehiculo.name } 
                                         year={vehiculo.year} 
                                         price={vehiculo.price} 
                                         photo={vehiculo.photo} 
-                                    />                    
+                                    />                              
+                                </Link>
                             )
                             })}
                         </section>

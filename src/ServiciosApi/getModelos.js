@@ -23,3 +23,29 @@ export function getModelos({segment, ordering}) {
             return items
         })       
 }
+
+export function getModeloSeleccionado({id}) {
+    const API_URL_MODELO_SELECCIONADO=`${API_URL}/${id}`
+    return fetch(API_URL_MODELO_SELECCIONADO)
+        .then(res => res.json())
+        .then(data => { 
+            const {id, name, segment, year, thumbnail, photo , title, model_features, model_highlights}=data
+            const description=data.description.split('>')[1].split('<')[0]
+            const price= Intl.NumberFormat('es-AR', {style:'currency', currency:'ARS'}).format(data.price)
+            const model={id, name, segment, year, thumbnail, photo , title, description, price}
+            
+            const features = model_features
+
+            const highlights = model_highlights.map((highlight)=>{
+                const {image,title}=highlight
+                const content =highlight.content.split('>')[1].split('<')[0]
+                return {title, image, content}
+            })
+            
+            return {model, features, highlights}
+        })
+        .catch(error => {
+            const data={}
+            return data
+        })       
+}
