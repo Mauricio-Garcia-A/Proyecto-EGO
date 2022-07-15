@@ -109,6 +109,48 @@ export function useSimuladorAPI() {
             name: "Suspencion Mejorada",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             image: Parte2,
+        },
+        {
+            id: 2,
+            titulo: "Suspencion Mejorada",
+            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            photo: Parte2,
+        },
+        {
+            id: 3,
+            titulo: "Transmisíon automática",
+            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            photo: Parte3,
+        },
+        {
+            id: 4,
+            titulo: "Transmisíon manual",
+            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            photo: Parte4, 
+        },
+        {
+            id: 5,
+            titulo: "Transmisíon asistida",
+            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            photo: Parte5,
+        },
+        {
+            id: 6,
+            titulo: "Traccion tracera",
+            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            photo: Parte6,
+        },
+        {
+            id: 7,
+            titulo: "Traccion delantera",
+            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            photo: Parte7,
+        },
+        {
+            id: 8,
+            titulo: "Sistema de frenos",
+            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            photo: Parte8,
         }
       ]
     
