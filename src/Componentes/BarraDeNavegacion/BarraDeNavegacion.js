@@ -10,19 +10,27 @@ export default function BarraDeNavegacion() {
     return (
         <div className='contenedor-BarraDeNavegacion'>
             <div className='icono-BarraDeNavegacion'>
-                <LogoEGO width='45px' height='45px' />
+                <NavLink to="/" >
+                    <LogoEGO width='45px' height='45px' />
+                </NavLink>
             </div>
             <div className='contenedor-links-BarraDeNavegacion'>
-                <button className='boton-menu-desplegable-BarraDeNavegacion' onClick={()=>{setMenuDespegado(!menuDesplegado)}}>
-                    {menuDesplegado ? <IconoBarraDeNavegacion titulo='cerrarMenu' width='40px' height='40px'/> : <IconoBarraDeNavegacion titulo='abrirMenu'  width='40px' height='40px'/> }
-                </button>
-                <nav className={menuDesplegado ? 'nav-BarraDeNavegacion' : 'nav-BarraDeNavegacion menu-desactivo'}>
-                    <NavLink to="/" className='link-BarraDeNavegacion'>HOME</NavLink>
-                    <NavLink to="/modelos" className='link-BarraDeNavegacion'>MODELOS</NavLink>
-                    <NavLink to="/fichatecnica" className='link-BarraDeNavegacion'>FICHA TECNICA</NavLink>  
-                </nav>
+                <div className='contenedor-boton-menu-desplegable-BarraDeNavegacion'>
+                    <span className='texto-menu-desplegable-BarraDeNavegacion'>Menú</span>
+                    <button className='boton-menu-desplegable-BarraDeNavegacion' onClick={()=>{setMenuDespegado(!menuDesplegado)}}>
+                        {menuDesplegado ? <IconoBarraDeNavegacion titulo='cerrarMenu' width='40px' height='40px'/> : <IconoBarraDeNavegacion titulo='abrirMenu'  width='40px' height='40px'/> }
+                    </button>                    
+                </div>
+
+                <div className={menuDesplegado ?'contenedor-nav-BarraDeNavegacion':'contenedor-nav-BarraDeNavegacion contenedor-desactivo'}>
+                    <nav className={menuDesplegado ? 'nav-BarraDeNavegacion' : 'nav-BarraDeNavegacion menu-desactivo'} onClick={()=>{setMenuDespegado(!menuDesplegado)}}>
+                        <NavLink to="/" className='link-BarraDeNavegacion'>HOME</NavLink>
+                        <NavLink to="/modelos" className='link-BarraDeNavegacion'>Modelos</NavLink>
+                        <NavLink to="/modelo/" className='link-BarraDeNavegacion'>Ficha de modedelo</NavLink>  
+                    </nav>
+                </div>
+             
             </div>  
         </div>
     )
 }
-
