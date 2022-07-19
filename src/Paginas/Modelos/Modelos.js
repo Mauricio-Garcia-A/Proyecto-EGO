@@ -54,7 +54,7 @@ export default function Modelos() {
                      :  <section className='contenedor-items-vehiculos-Modelos'>
                             {modelos.map((vehiculo)=>{
                             return (
-                                <Link key={'itemVehiculo'+vehiculo.id}  to={`/modelo/${vehiculo.id}/${vehiculo.name}`} className='estilos-link-Modelos'>
+                                <Link key={'itemVehiculo'+vehiculo.id}  to={`/modelo/${vehiculo.id}/${vehiculo.name.replace(/ /g, "-")}`} className='estilos-link-Modelos'>
                                     <ItemVehiculo 
                                         id={vehiculo.id}
                                         name={vehiculo.name } 

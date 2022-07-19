@@ -12,7 +12,8 @@ export default function FichaTecnica(){
 
     const {id} = useParams();                                                                                           // Extraigo ID de la URL
     const {modelo,  model_features, model_highlights, loading} = useDetallesDelModelo({id})
-    
+
+      
     const ItemDescripcion = ({Titulo, Descripcion, Imagen, Par})=>{
         return(
                 <section className={Par ? 'seccion-decripcion-vehiculo-FichaTecnica seccion-par-FichaTecnica': 'seccion-decripcion-vehiculo-FichaTecnica seccion-impar-FichaTecnica'} > 
