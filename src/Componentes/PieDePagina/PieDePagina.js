@@ -56,7 +56,7 @@ export default function PieDePagina() {
                         <div className='sucursales-PieDePagina'> 
                             {INFORMACION_SUCURSALES.map((opcion,i)=>{ 
                                 return(
-                                    <div className='item-sucursal-PieDePagina'>
+                                    <div className='item-sucursal-PieDePagina' key={'ubicacion'+i}>
                                        <span key={"ItemInfo"+i} className="textLinks-PieDePagina"><IconoPieDePagina titulo='ubicacion'  width='10px' height='10px'  fill="while"/> {opcion.titulo}</span> 
                                     </div>
                                     

@@ -74,7 +74,7 @@
     background-color: rgba(194, 194, 194, 0.892);
 }
 
-@media (max-width:1007px) {
+@media (max-width:770px) {
     .titulo-redes-sociales-PieDePagina {
         width: 80%;
         
@@ -102,10 +102,11 @@
         width: 410px;
     }
 }
-@media (max-width:525px) {
+@media (max-width:1023px) {
     .seccion2-PieDePagina {
         flex-flow: column;
-        width: 90%;
+        width: 200px;
+        padding-left: 20px;
     }
 }
 
