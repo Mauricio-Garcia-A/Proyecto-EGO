@@ -25,9 +25,9 @@ export default function PlaceholderFichaTecnica() {
 
             <div className='contenedor-carrusel-PlaceholderFichaTecnica'> 
                 <div className='gradienteDerecho-PlaceholderFichaTecnica ' />
-                { ['','','',''].map(()=>{ 
+                { ['1','2','3','4'].map((i)=>{ 
                     return(
-                        <div className='contenedor-item-PlaceholderFichaTecnica'>
+                        <div className='contenedor-item-PlaceholderFichaTecnica' key={'itemPHFTC'+i}>
                             <div className='contenedor-imagen-item-carrusel-PlaceholderFichaTecnica'>
                                 <img src={ImagenVehiculoDefault} alt="img" className='imagen-PlaceholderFichaTecnica'/> 
                             </div> 
@@ -44,13 +44,13 @@ export default function PlaceholderFichaTecnica() {
             </div>
 
             <section > 
-                {['',''].map((itemSeccion, i)=>{
+                {['1','2'].map((itemSeccion, i)=>{
                     let seccionPar=false
                     if ((i%2)===0) {
                         seccionPar=true
                     }
                     return(
-                        <section className={seccionPar ? 'seccion-decripcion-vehiculo-PlaceholderFichaTecnica seccion-par-PlaceholderFichaTecnica': 'seccion-decripcion-vehiculo-PlaceholderFichaTecnica seccion-impar-PlaceholderFichaTecnica'} > 
+                        <section className={seccionPar ? 'seccion-decripcion-vehiculo-PlaceholderFichaTecnica seccion-par-PlaceholderFichaTecnica': 'seccion-decripcion-vehiculo-PlaceholderFichaTecnica seccion-impar-PlaceholderFichaTecnica'} key={'itemPHFTS'+itemSeccion}> 
                             <div className='contenedor-textos-seccion-PlaceholderFichaTecnica'> 
                                 <div className='texto-titulo-PlaceholderFichaTecnica' style={{width:'30%'}}/>
                                 <br />
