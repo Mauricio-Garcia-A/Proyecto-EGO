@@ -19,6 +19,14 @@
     font-family: Arial, Helvetica, sans-serif;
     
 }
+
+.titulo-redes-sociales-PieDePagina {
+    width: 150px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 10pt;
+    
+}
 .seccion2-PieDePagina {
     display: flex;
     flex-flow: row nowrap;
@@ -31,24 +39,46 @@
 }
 .mapa-PieDePagina {
     background: rgb(107, 107, 107);
-    height: 100px;
-    width: 200px;
+    height: 120px;
+    width: 260px;
     margin-right: 10px;
     border-radius: 3px;
     overflow: hidden;
 }
-.sucursales-PieDePagina{
+.contenedor-sucursales-PieDePagina{
     display: flex;
     flex-flow: row nowrap;
     padding-left: 20px;
     margin-bottom: 20px;
+    position: relative;
 }
-
+.sucursales-PieDePagina {
+    position: absolute;
+    margin: 5px;
+}
 .imagen-PieDePagina{
     height: auto;
-    width: 230px;
+    width:100%;
 }
-@media (max-width:950px) {
+.item-sucursal-PieDePagina {
+    margin: 3px;
+    border-radius: 5px;
+    width: 80px;
+    padding: 3px;
+    cursor:pointer;
+    background-color: rgba(248, 248, 248, 0.833);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.item-sucursal-PieDePagina:hover {
+    background-color: rgba(194, 194, 194, 0.892);
+}
+
+@media (max-width:1007px) {
+    .titulo-redes-sociales-PieDePagina {
+        width: 80%;
+        
+    }
     .contenedor-secciones-PieDePagina {
         flex-flow: column;
     }  
@@ -63,7 +93,7 @@
         height: 200px;
         
     }
-    .sucursales-PieDePagina{
+    .contenedor-sucursales-PieDePagina{
         display: flex;
         flex-flow: row wrap;
     }
@@ -72,7 +102,7 @@
         width: 410px;
     }
 }
-@media (max-width:500px) {
+@media (max-width:525px) {
     .seccion2-PieDePagina {
         flex-flow: column;
         width: 90%;
@@ -124,9 +154,17 @@
     display: block;
 }
 .item-informacion-PieDePagina {
-    margin-right: 30px;
+    margin-left: 25px;
     margin-bottom: 20px;
+}
+.item-titulo-informacion-PieDePagina {
+    margin: 10px;
 }
 .texto-seccion3-PieDePagina{
     margin-left: 20px;
+}
+
+.contenedor-item-informacion-PieDePagina {
+    display: flex;
+    flex-direction: column;
 }

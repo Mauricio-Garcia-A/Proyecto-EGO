@@ -8,12 +8,19 @@ import ImagenUbicacion from '../../Imagenes/imagen-ubicacion.png'
     Este componente solo muestra informacion de interes que suele estar en los footers. (No fue solicitado en el CHALLENGE de EGO - Tarea PROACTIVA)
 */
 export default function PieDePagina() {
+
     function ItemDeInformacion(props){
         return(
-            <div className='item-informacion-PieDePagina'>
-                <b>{props.title}</b><br/>
-                {props.links.map((lk, e)=>{
-                    return(<a  key={"lk"+e} className="textLinks-PieDePagina" href="/#">● {lk.dato}</a>)})}
+            <div className='contenedor-item-informacion-PieDePagina'>
+                <div>
+                    <IconoPieDePagina titulo={props.icono}  width='17px' height='17px'  fill="while"/>
+                    <b className='item-titulo-informacion-PieDePagina'>{props.title}</b><br/>
+                </div>  
+                <div className='item-informacion-PieDePagina'>
+                    {props.links.map((lk, e)=>{
+                        return(<a  key={"lk"+e} className="textLinks-PieDePagina" href="/#">● {lk.dato}</a>)})                
+                    }
+                </div>    
             </div>  
         )
     }
@@ -25,6 +32,7 @@ export default function PieDePagina() {
                     <div className='iconoLogo-PieDePagina'>
                         <LogoEGO width='70px' height='70px' />
                     </div>
+                    <b className='titulo-redes-sociales-PieDePagina'>Siguenos en nuestras Redes Sociales</b>
                     <div className='redes-sociales-PieDePagina'>
                         <IconoPieDePagina titulo='instagram' width='25px' height='25px' className='icono-red-social icono-instagram'/>
                         <IconoPieDePagina titulo='facebook'  width='25px' height='25px'  className='icono-facebook icono-red-social '/> 
@@ -34,21 +42,24 @@ export default function PieDePagina() {
                 <div className='seccion2-PieDePagina'>
                     {INFORMACION_OPCIONES.map((opcion,i)=>{ 
                         return(
-                            <ItemDeInformacion title={opcion.titulo} links={opcion.opciones} key={"ItemInfo"+i}/>
+                            <ItemDeInformacion title={opcion.titulo} icono={opcion.icono} links={opcion.opciones} key={"ItemInfo"+i}/>
                         )
                     })}   
                 </div>
                   
                 <div className='seccion3-PieDePagina'>
                     <IconoPieDePagina titulo='ubicacion'  width='15px' height='15px'  fill="while"/><b> Sucursales</b><br/>
-                    <div className='sucursales-PieDePagina'>
+                    <div className='contenedor-sucursales-PieDePagina'>
                         <div className='mapa-PieDePagina'>
                             <img className='imagen-PieDePagina'src={ImagenUbicacion} alt='img' ></img>
                         </div>
-                        <div> 
+                        <div className='sucursales-PieDePagina'> 
                             {INFORMACION_SUCURSALES.map((opcion,i)=>{ 
                                 return(
-                                    <span key={"ItemInfo"+i} className="textLinks-PieDePagina">● {opcion.titulo}</span>
+                                    <div className='item-sucursal-PieDePagina'>
+                                       <span key={"ItemInfo"+i} className="textLinks-PieDePagina"><IconoPieDePagina titulo='ubicacion'  width='10px' height='10px'  fill="while"/> {opcion.titulo}</span> 
+                                    </div>
+                                    
                                 )
                             })}
                         </div>
@@ -69,13 +80,19 @@ export default function PieDePagina() {
 
 const INFORMACION_SUCURSALES = [{titulo:"CABA"},{titulo:"La Plata"}]
 const INFORMACION_OPCIONES = [
-    {titulo:"Acerca de Nosotros", opciones: [ {titulo:'informacion', dato:"Informacion"},
+    { titulo:"Acerca de Nosotros", 
+      icono:'informacion',
+      opciones: [ {titulo:'informacion', dato:"Informacion"},
                                               {titulo:'novedades', dato:"Novedades"}
-                                            ]},
-    {titulo:"Autos", opciones:  [ {titulo:'ceroKm',dato:"Autos 0km"},
+                ]},
+    { titulo:"Autos",
+      icono:'autos',
+      opciones: [ {titulo:'ceroKm',dato:"Autos 0km"},
                                   {titulo:'usados',dato:"Autos Usados"}
-                                ]},
-    {titulo:"Servicios", opciones:  [ {titulo:'planaAhorra',dato:"Plan de ahorra"}, 
+                ]},
+    { titulo:"Servicios", 
+      icono:'sevicios',
+      opciones: [ {titulo:'planaAhorra',dato:"Plan de ahorra"}, 
                                       {titulo:'posventa',dato:"Posventa"},
-                                    ]}
+                ]}
 ]
