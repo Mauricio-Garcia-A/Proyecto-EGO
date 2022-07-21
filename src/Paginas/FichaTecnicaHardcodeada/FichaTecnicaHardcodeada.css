@@ -1,0 +1,81 @@
+.encabezado-FichaTecnicaHardcodeada{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedor-imagen-encabezado-FichaTecnicaHardcodeada {
+    max-width: 600px;
+    max-height: 350px;
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+.contenedor-texto-encabezado-FichaTecnicaHardcodeada{
+    width: 40%;    
+}
+.imagen-vehiculo-FichaTecnicaHardcodeada {
+    width: 100%;
+    height: auto;
+}
+
+.titulo-FichaTecnicaHardcodeada {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    color: rgb(77, 77, 77);
+}
+.subtitulo-FichaTecnicaHardcodeada {
+    margin: 0;
+    padding: 0;
+    color: rgb(78, 78, 78);
+}
+.descripcion-FichaTecnicaHardcodeada {
+    color: rgb(109, 109, 109);
+}
+
+
+.seccion-decripcion-vehiculo-FichaTecnicaHardcodeada {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+}
+.seccion-impar-FichaTecnicaHardcodeada{
+    flex-direction:row-reverse;
+}
+.seccion-par-FichaTecnicaHardcodeada{
+    flex-direction:row;
+}
+
+
+.contenedor-textos-seccion-FichaTecnicaHardcodeada {
+    width: 40%;    
+    padding-top: 3%;
+} 
+.titulo-seccion-FichaTecnicaHardcodeada {
+    font-size: 20px;
+}
+.contenedor-imagen-seccion-FichaTecnicaHardcodeada {
+    display: flex;
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.imagen-seccion-FichaTecnicaHardcodeada {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 939px) {
+    .contenedor-texto-encabezado-FichaTecnicaHardcodeada{
+        width: 80%;
+    }
+    .contenedor-textos-seccion-FichaTecnicaHardcodeada {
+        width: 95%;
+    } 
+    .contenedor-imagen-seccion-FichaTecnicaHardcodeada {
+        width: 95%;
+    }
+}

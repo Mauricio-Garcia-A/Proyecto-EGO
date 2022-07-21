@@ -102,81 +102,86 @@ export function useSimuladorAPI() {
       const ITEM_PARTES = [
         {
             name: "Motores",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            description: "El nuevo motor 2.0 brinda un excelente equilibrio entre bajo consumo y performans",
             image: Parte1,
         },
         {
             name: "Suspencion Mejorada",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            description: "4 modos de conducción: normal, ecológico, deportivo y 100% eléctrico. ",
             image: Parte2,
         },
         {
-            id: 2,
-            titulo: "Suspencion Mejorada",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte2,
+            name: "Suspencion Mejorada",
+            description: "otorgan una aceleración directa por medio de un engranaje mecánico.",
+            image: Parte2,
         },
         {
             id: 3,
-            titulo: "Transmisíon automática",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte3,
+            name: "Transmisíon automática",
+            description: "DirectShift CVT(2.0): de 10 velocidades",
+            image: Parte3,
         },
         {
             id: 4,
-            titulo: "Transmisíon manual",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte4, 
+            name: "Transmisíon manual",
+            description: "Incorpora modo secuencial, levas al volante y modo de conducción SPORT.",
+            image: Parte4, 
         },
         {
             id: 5,
-            titulo: "Transmisíon asistida",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte5,
+            name: "Transmisíon asistida",
+            description: "El nuevo sistema híbrido auto recargable está compuesto por dos motores. ",
+            image: Parte5,
         },
         {
             id: 6,
-            titulo: "Traccion tracera",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte6,
+            name: "Traccion tracera",
+            description: "Incorpora un nuevo tipo de transmisión automática eCVT, variable. ",
+            image: Parte6,
         },
         {
             id: 7,
-            titulo: "Traccion delantera",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte7,
+            name: "Traccion delantera",
+            description: "ncorpora control de estabilidad (VSC) y control de tracción. ",
+            image: Parte7,
         },
         {
             id: 8,
-            titulo: "Sistema de frenos",
-            descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            photo: Parte8,
+            name: "Sistema de frenos",
+            description: "La versión XLS ofrece llantas de aleación diamantadas y faros oscurecidos. ",
+            image: Parte8,
         }
       ]
     
       const SECCIONES=[
-        {   titulo:'Titulo de 20px',
-            descripcion:' Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500',
-            imagen:Imagen2
+        {   title:'RESISTENCIA',
+            content:'Mayor resistencia en la nueva transmisión y tracción',
+            image:Imagen2
         },
-        {   titulo:'Titulo de 20px',
-            descripcion:' Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500',
-            imagen:Imagen3
+        {   title:'TRACCION',
+            content:'Modulo de control Doble Traccion con Computadora de Control propietaria de Traccion Hilux. Las versiones 4x4 cuentan con A-TRC y el sistema funciona cuando el vehículo se encuentra con la tracción 4x4 activada. El A-TRC aplica fuerza de frenado para limitar el giro de las ruedas que pierden tracción, permitiendo un óptimo avance en terrenos resbaladizos.',
+            image:Imagen3
         },
-        {   titulo:'Titulo de 20px',
-            descripcion:' Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500',
-            imagen:Imagen4
+        {   title:'PROTECTOR',
+            content:'Protector de carter "Heavy Duty"',
+            image:Imagen4
         },
-        {   titulo:'Titulo de 20px',
-            descripcion:' Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500',
-            imagen:Imagen5
+        {   title:'NUEVO CHASIS',
+            content:'Mayor durabilidad, estabilidad, confort de marcha y mucha seguridad.',
+            image:Imagen5
         },
     ]
 
     const MODELO_SELECCIONADO={ name:'Hilux DX/SR', 
                                 title:'Preparada para cualquier desafío' , 
-                                description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500', 
-                                photo:Imagen1 
+                                description:'Desempeño Off-Road. La Hilux mejora su legendaria robustez hasta el detalle.', 
+                                photo:Imagen1,
+                                year: '2021',
+                                price: '$ 3.600.000,00',
+                                motor: 'Toyota 2GD (2.4l) - 4 cilindros',
+                                combustible: 'Diésel Grado 3',
+                                diametroRueda: '92 x 90',
+                                transmision: 'Doble traccion (ADD y TRC)'
                             }
 
     return { MODELOS, ITEM_PARTES, SECCIONES, IMAGENES_CARRUSEL, MODELO_SELECCIONADO} 

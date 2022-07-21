@@ -1,0 +1,208 @@
+.contenedor-ModeloEnStock {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.titulo-ModeloEnStock {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.contenedor-item-ModeloEnStock {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    position: relative;
+    background: rgb(248, 248, 248);
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 1px rgba(143, 143, 143, 0.153);
+    overflow: hidden;
+    background: rgb(246, 246, 246);
+}
+
+
+/* Seccion Visible*/
+.contenedor-visible-ModeloEnStock {
+
+
+    width: 350px;
+    height:300px;
+    
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(160, 160, 160, 0.23);
+}
+.contenedor-imagen-ModeloEnStock {
+    margin:5px;
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+}
+.imagen-ModeloEnStock {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.texto-titulo-ModeloEnStock {
+    text-align: center;
+    font-size: 25px;
+    padding:0;
+    margin: 0;
+}
+.texto-informacion-ModeloEnStock {
+    text-align: center;
+    color: rgb(73, 73, 73);
+    padding:0;
+    margin: 0;
+}
+
+/* Seccion Desplegable*/
+.contenedor-desplegable-ModeloEnStock {
+    
+
+    width: 300px;
+    height: 250px;
+    transition: 1s ease all ; 
+    overflow: hidden;
+}
+.desplegable-desactivo-ModeloEnStock {
+    width: 0px;
+}
+
+.contenedor-informacion-ModeloEnStock {
+    width: 300px;
+    height: 250px;
+    transition: 2s ease all ;
+    padding-left: 30px;
+}
+.informacion-desactivo-Mcontenedor {
+    display: none;    
+}
+.titulo-informacion-ModeloEnStock {
+    color: rgb(71, 71, 71);
+    font-size: 15pt;
+    padding:0;
+    
+}
+.caracteristica-informacion-ModeloEnStock {
+    color: rgba(70, 70, 70, 0.803);
+    font-size: 10pt;
+    padding:0;
+    margin: 0;
+}
+
+
+.boton-ModeloEnStock {
+    background:rgba(255, 235, 205, 0);
+    font-size: 15pt;
+    padding: 5px 15px 7px 15px   ;
+    color: rgb(112, 112, 112);
+    border: 2px solid rgba(55, 55, 55, 0.318);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration:none;
+}
+.boton-ModeloEnStock:hover {
+    background: rgba(66, 66, 66, 0.125);
+}
+
+
+/* Seccion boton flecha*/
+.contenedor-boton-flecha-ModeloEnStock {
+    width: 40px;
+    border-left: 1px solid rgba(215, 215, 215, 0.485);
+    background: rgb(238, 238, 238);
+    padding-top:140px;
+    padding-left: 10px;
+}
+
+.boton-flecha-ModeloEnStock {
+    background: none;
+    border: none;
+    fill: rgba(140, 140, 140, 0.374);
+    transform: rotate(0deg);
+    cursor: pointer;
+    transition: 1s ease all ; 
+
+
+}
+.boton-flecha-ModeloEnStock:hover {
+    fill: rgb(140, 140, 140);
+
+}
+
+.boton-desplegado-activo-ModeloEnStock {
+    transform: rotate(180deg);
+}
+
+.icono-flecha-ModeloEnStock {
+    width: 20px;
+    height: 20px;
+    
+}
+
+/*Cambios de estilos responsivo. Adaptable valores menores 600px*/
+@media only screen and (max-width: 840px) {
+
+    /* Seccion Visible*/
+    .contenedor-item-ModeloEnStock {
+        max-width: 350px;
+        width: 100%;
+        flex-flow: column nowrap;
+    }
+
+    /* Seccion Desplegable*/
+    .desplegable-desactivo-ModeloEnStock {
+        width: 300px;
+        height: 0px;
+    }
+    
+    .informacion-desactivo-Mcontenedor {
+       display: none 
+    }
+    
+    /* Seccion boton flecha*/
+    .contenedor-boton-flecha-ModeloEnStock {
+        width:100%;
+        height: 40px;
+        border-top: 1px solid rgba(215, 215, 215, 0.485); 
+        padding-top:10px;
+        padding-left: 150px;
+    }
+    .boton-flecha-ModeloEnStock {
+        background: none;
+        border: none;
+        fill: rgba(140, 140, 140, 0.374);
+        transform: rotate(90deg);
+        cursor: pointer;
+        transition: 1s ease all ; 
+    }
+    .boton-flecha-ModeloEnStock:hover {
+        fill: rgb(140, 140, 140);
+    
+    }
+    
+    .boton-desplegado-activo-ModeloEnStock {
+        transform: rotate(270deg);
+    }
+
+}
+
+.contenedor-stock-ModeloEnStock {
+    position: absolute;
+    background: rgba(0, 128, 0, 0.596);
+    color: aliceblue;
+    padding: 5px;
+    tab-size: 10pt;
+    width: 200px;
+    text-align: center;
+    transform: rotate(-45deg);
+    top: 30px;
+    left: -60px;
+    box-shadow: rgba(32, 32, 32, 0.289) 0px 5px 20px 0px;
+}
