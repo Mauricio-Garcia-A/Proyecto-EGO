@@ -4,6 +4,7 @@ import './FichaTecnica.css'
 import CarruselPartesVehiculo from '../../Componentes/CarruselPartesVehiculo/CarruselPartesVehiculo';
 import { useDetallesDelModelo } from '../../Hooks/useDetallesDelModelo';
 import PlaceholderFichaTecnica from '../../Componentes/ItemsLoading/PlaceholderFichaTecnica/PlaceholderFichaTecnica';
+import useSEO from '../../Hooks/useSEO';
 
 export default function FichaTecnica(){
     useEffect(() => {
@@ -13,8 +14,12 @@ export default function FichaTecnica(){
     const {id} = useParams();                                                                                           // Extraigo ID de la URL
     const {modelo,  model_features, model_highlights, loading} = useDetallesDelModelo({id})
 
-      
+    const tituloSeoFT = loading ? 'Cargando...' : `Modelo "${modelo.name}"`
+    const descripcionSeoFT = `Descripcion de Modelo ${modelo.name}`
+    useSEO({title: tituloSeoFT, description: descripcionSeoFT})  
+
     const ItemDescripcion = ({Titulo, Descripcion, Imagen, Par})=>{
+        
         return(
                 <section className={Par ? 'seccion-decripcion-vehiculo-FichaTecnica seccion-par-FichaTecnica': 'seccion-decripcion-vehiculo-FichaTecnica seccion-impar-FichaTecnica'} > 
                     <div className='contenedor-textos-seccion-FichaTecnica'> 

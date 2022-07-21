@@ -4,6 +4,7 @@ import PlaceholderModelos from '../../Componentes/ItemsLoading/PlaceholderModelo
 import ItemVehiculo from '../../Componentes/ItemVehiculo/ItemVehiculo';
 import SelectorModelos from '../../Componentes/SelectorModelos/SelectorModelos';
 import { useModelos } from '../../Hooks/useModelos';
+import useSEO from '../../Hooks/useSEO';
 import './Modelos.css'
 
 
@@ -27,6 +28,10 @@ export default function Modelos() {
     const [ordering,setOrdering]=useState('')
 
     const {modelos,loading}=useModelos({segment, ordering})
+
+    const tituloSeoM = loading ? 'Cargando...' : `${modelos.length} Modelos`
+    const descripcionSeoM = `Descripcion de los ${modelos.length} Modelos`
+    useSEO({title: tituloSeoM, description: descripcionSeoM})
 
     return (
         <div>

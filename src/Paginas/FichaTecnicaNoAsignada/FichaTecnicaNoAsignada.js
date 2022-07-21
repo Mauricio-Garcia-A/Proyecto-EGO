@@ -1,9 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import useSEO from '../../Hooks/useSEO'
 import './FichaTecnicaNoAsignada.css'
 
 
 export default function FichaTecnicaNoAsignada() {
+    useSEO({title:'Modelo "No Asignado"', description:'Bienvenidos a EGO'})
+
     return (
         <div className='contenedor-FichaTecnicaNoAsignada'>
             <h1 className='titulo-FichaTecnicaNoAsignada '>¡Por favor seleccione un Modelo de Vehiculo!</h1>

@@ -3,11 +3,12 @@ import CarruselHome from '../../Componentes/CarruselHome/CarruselHome'
 import ComparacionVehiculo from '../../Componentes/ComparacionVehiculo/ComparacionVehiculo'
 import ItemsServiciosHome from '../../Componentes/ItemsServiciosHome/ItemsServiciosHome'
 import ModeloEnStock from '../../Componentes/ModeloEnStock/ModeloEnStock'
+import useSEO from '../../Hooks/useSEO'
 import { useSimuladorAPI } from '../../Hooks/useSimuladorAPI'
 import './Home.css'
 
 export default function Home(){
-
+    useSEO({title:'HOME', description:'Bienvenidos a EGO'})
     const {IMAGENES_CARRUSEL} = useSimuladorAPI()
     return (
         <>

@@ -3,6 +3,7 @@ import './FichaTecnicaHardcodeada.css'
 import CarruselPartesVehiculo from '../../Componentes/CarruselPartesVehiculo/CarruselPartesVehiculo';
 
 import { useSimuladorAPI } from '../../Hooks/useSimuladorAPI';
+import useSEO from '../../Hooks/useSEO';
 
 export default function FichaTecnicaHardcodeada(){
     useEffect(() => {
@@ -10,7 +11,12 @@ export default function FichaTecnicaHardcodeada(){
     }, [])
                                                                           
     const {ITEM_PARTES, SECCIONES, MODELO_SELECCIONADO} = useSimuladorAPI()
-      
+    
+    const tituloSeoFT = `Modelo "${ MODELO_SELECCIONADO.name}"`
+    const descripcionSeoFT = `Descripcion de Modelo ${ MODELO_SELECCIONADO.name}`
+    useSEO({title: tituloSeoFT, description: descripcionSeoFT}) 
+
+
     const ItemDescripcion = ({Titulo, Descripcion, Imagen, Par})=>{
         return(
                 <section className={Par ? 'seccion-decripcion-vehiculo-FichaTecnicaHardcodeada seccion-par-FichaTecnicaHardcodeada': 'seccion-decripcion-vehiculo-FichaTecnicaHardcodeada seccion-impar-FichaTecnicaHardcodeada'} > 

@@ -1,9 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import useSEO from '../../Hooks/useSEO'
 import IconoError from './IconoError'
 import './PaginaError.css'
 
 export default function PaginaError(){
+    useSEO({title:'Error', description:'Bienvenidos a EGO'})
+
     return (
         <div className='contenedor-PaginaError'>
             <IconoError className='icono-error-PaginaError'/>
