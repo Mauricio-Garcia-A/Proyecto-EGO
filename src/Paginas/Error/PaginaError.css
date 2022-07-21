@@ -1,0 +1,33 @@
+.contenedor-PaginaError {
+    padding: 35px;
+    padding-bottom: 60px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-PaginaError {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    color: rgb(187, 4, 4);
+    text-align: center;
+}
+
+.boton-PaginaError {
+    background:rgba(255, 235, 205, 0);
+    font-size: 15pt;
+    padding: 5px 15px 7px 15px   ;
+    color: rgb(112, 112, 112);
+    border: 2px solid rgba(55, 55, 55, 0.318);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration:none;
+}
+.boton-PaginaError:hover {
+    background: rgba(66, 66, 66, 0.125);
+}
+.icono-error-PaginaError {
+    transform: scale(0.6);
+}

@@ -6,6 +6,7 @@ import Modelos from './Paginas/Modelos/Modelos'
 import FichaTecnica from './Paginas/FichaTecnica/FichaTecnica'
 import './App.css'
 import FichaTecnicaHardcodeada from "./Paginas/FichaTecnicaHardcodeada/FichaTecnicaHardcodeada";
+import PaginaError from "./Paginas/Error/PaginaError";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="modelos" element={<Modelos />} />
           <Route path="/modelo/:id/:name" element={<FichaTecnica />} />
           <Route path="/modelo/0/Hilux-DXSR" element={<FichaTecnicaHardcodeada />} />
+          <Route path="/*" element={<PaginaError />} />
         </Routes> 
       </section>
       <footer className='pie-de-pagina-App '>
