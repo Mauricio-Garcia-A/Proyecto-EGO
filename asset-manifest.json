@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Proyecto-EGO/static/css/main.0d6b2633.css",
-    "main.js": "/Proyecto-EGO/static/js/main.d21ac3da.js",
+    "main.js": "/Proyecto-EGO/static/js/main.800ad81a.js",
     "static/js/787.2f346c0f.chunk.js": "/Proyecto-EGO/static/js/787.2f346c0f.chunk.js",
     "static/media/Imagen3.png": "/Proyecto-EGO/static/media/Imagen3.a70abf65723ed8627dcd.png",
     "static/media/Parte3.jpg": "/Proyecto-EGO/static/media/Parte3.52865ed097d935dfd7c6.jpg",
@@ -27,11 +27,11 @@
     "static/media/Parte1.jpg": "/Proyecto-EGO/static/media/Parte1.4a231f0738a12864ba1b.jpg",
     "index.html": "/Proyecto-EGO/index.html",
     "main.0d6b2633.css.map": "/Proyecto-EGO/static/css/main.0d6b2633.css.map",
-    "main.d21ac3da.js.map": "/Proyecto-EGO/static/js/main.d21ac3da.js.map",
+    "main.800ad81a.js.map": "/Proyecto-EGO/static/js/main.800ad81a.js.map",
     "787.2f346c0f.chunk.js.map": "/Proyecto-EGO/static/js/787.2f346c0f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d6b2633.css",
-    "static/js/main.d21ac3da.js"
+    "static/js/main.800ad81a.js"
   ]
 }
