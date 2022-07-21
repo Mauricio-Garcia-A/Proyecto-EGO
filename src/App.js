@@ -7,6 +7,7 @@ import FichaTecnica from './Paginas/FichaTecnica/FichaTecnica'
 import './App.css'
 import FichaTecnicaHardcodeada from "./Paginas/FichaTecnicaHardcodeada/FichaTecnicaHardcodeada";
 import PaginaError from "./Paginas/Error/PaginaError";
+import FichaTecnicaNoAsignada from "./Paginas/FichaTecnicaNoAsignada/FichaTecnicaNoAsignada";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="modelos" element={<Modelos />} />
           <Route path="/modelo/:id/:name" element={<FichaTecnica />} />
           <Route path="/modelo/0/Hilux-DXSR" element={<FichaTecnicaHardcodeada />} />
+          <Route path="/modelo/0/" element={<FichaTecnicaNoAsignada />} />
           <Route path="/*" element={<PaginaError />} />
         </Routes> 
       </section>

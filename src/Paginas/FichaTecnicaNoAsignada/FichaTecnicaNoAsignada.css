@@ -1,0 +1,38 @@
+.contenedor-FichaTecnicaNoAsignada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: rgb(248, 248, 248);
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 1px rgba(143, 143, 143, 0.153);
+    overflow: hidden;
+    background: rgb(246, 246, 246);
+    margin: 50px 10% ;
+}
+
+
+.titulo-FichaTecnicaNoAsignada {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    color: rgb(187, 4, 4);
+    text-align: center;
+}
+
+.boton-FichaTecnicaNoAsignada {
+    background:rgba(255, 235, 205, 0);
+    font-size: 15pt;
+    padding: 5px 15px 7px 15px   ;
+    color: rgb(75, 75, 75);
+    border: 2px solid rgba(55, 55, 55, 0.318);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration:none;
+}
+.boton-FichaTecnicaNoAsignada:hover {
+    background: rgba(66, 66, 66, 0.125);
+}
+.icono-error-FichaTecnicaNoAsignada {
+    transform: scale(0.6);
+}
