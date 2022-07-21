@@ -29,7 +29,7 @@ export default function BarraDeNavegacion() {
                     <nav className={menuDesplegado ? 'nav-BarraDeNavegacion' : 'nav-BarraDeNavegacion menu-desactivo'} onClick={()=>{setMenuDespegado(!menuDesplegado)}}>
                         <NavLink to="/" className='link-BarraDeNavegacion'>HOME</NavLink>
                         <NavLink to="/modelos" className='link-BarraDeNavegacion'>Modelos</NavLink>
-                        <NavLink to={`/modelo/${idContex}/${nameContex}`} className='link-BarraDeNavegacion'>Ficha de modedelo</NavLink>  
+                        <NavLink to={`/modelo/${idContex}/${nameContex}`} className='link-BarraDeNavegacion'>Ficha de modelo</NavLink>  
                     </nav>
                 </div>
              
